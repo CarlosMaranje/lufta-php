@@ -1,0 +1,11 @@
+#Directories
+csv
+csv_backup
+filesToMerge
+pdf
+vendor
+
+#File type
+*.csv
+*.json
+*.rar
