@@ -9,8 +9,8 @@ class RemoveValue extends MasterReport
     public function propertiesMap()
     {
         return [
-            ["field"=>"CashierId", "type"=>"string"],
-            ["field"=>"CardNumber", "type"=>"string"],
+            ["field"=>"Carlos", "type"=>"int"],
+            ["field"=>"Guillaume", "type"=>"float"],
             ["field"=>"Customer", "type"=>"string"],
             ["field"=>"TransactionNumber", "type"=>"string"],
             ["field"=>"TransactionDateTime", "type"=>"string"],

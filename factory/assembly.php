@@ -46,12 +46,12 @@ $start = time();
 $names = [
     "10645" => "LUF-10645 Casino Skampa",
 //    "10487" => "LUF-10487",
-//    "10497" => "LUF-10497 Casino Midas Mazatlan",
-//    "10513" => "LUF-10513 Casino Entretenimiento Palermo Nogales",
-//    "10523" => "LUF-10523 Casino Midas Agua Prieta",
+    "10497" => "LUF-10497 Casino Midas Mazatlan",
+    "10513" => "LUF-10513 Casino Entretenimiento Palermo Nogales",
+    "10523" => "LUF-10523 Casino Midas Agua Prieta",
 //    "10525" => "LUF-10525 Casino Emine San Luis",
-//    "10562" => "LUF-10562 Casino Dardania Guamuchil",
-//    "10783" => "LUF-10783 Casino Midas Rosarito"
+    "10562" => "LUF-10562 Casino Dardania Guamuchil",
+    "10783" => "LUF-10783 Casino Midas Rosarito"
 ];
 
 foreach ($names as $location=>$name) {
@@ -76,10 +76,10 @@ foreach ($names as $location=>$name) {
      */
 //Start processing the file
     $delimiter = ";";
-    $month = 'SEPTEMBER';
+    $month = 'SEPTEMBER 2020';
     $pos = '';
     $file = fopen($csvDir, "r");
-    $fileName = $location . '-' . $month;
+    $fileName = $name . '-' . $month;
 
 
 
@@ -105,7 +105,7 @@ foreach ($names as $location=>$name) {
     $pdf->Ln();
     $pdf->SetFont('Helvetica', '', 10);
     $pdf->MultiCell(100, $height, "Location: {$names[$location]}", 0, 'L');
-    $pdf->MultiCell($width, $height, "Date: {$month} 2020", 0, 'L');
+    $pdf->MultiCell($width, $height, "Date: {$month}", 0, 'L');
     $pdf->Ln();
     $pdf->SetFont($fontFamily, '', 10);
     $pdf->SetLeftMargin(80);
@@ -113,7 +113,7 @@ foreach ($names as $location=>$name) {
 
     $i = 0;
     while (($csv = fgetcsv($file, "", $delimiter)) !== FALSE) {
-        if ($i > 1000 && $i<1002) {
+        if ($i > 0) {
 
             $report = new IseAndSat();
 

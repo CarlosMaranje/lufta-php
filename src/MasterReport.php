@@ -1,7 +1,9 @@
 <?php
 
-
 namespace Models;
+
+use \GuzzleHttp;
+use http\Client;
 
 
 class MasterReport
@@ -20,6 +22,14 @@ class MasterReport
 
     public function toArray(){
         return (array) $this;
+    }
+
+    /**
+     * @param number $number
+     * @return string
+     */
+    public function formatNumber($number){
+        return number_format($number, 2, '.', '');
     }
 
     /**
@@ -61,11 +71,17 @@ class MasterReport
                 $newVal = $val !=='' ? intval($val) : false;
                 break;
             case "float":
-                if(strpos($val, ',') !==FALSE){
-                    $val = floatval(str_replace(',', '.', str_replace(',', '.', $val)));
-                }
+                    if($match = preg_match('/\d+,\d+.\d+/', $val)){
+                        $newVal = floatval(str_replace(',', '', $val));
+                    }
+                    else{
+                        $newVal = floatval(str_replace(',', '.', $val));
+//                        $newVal = $val !=='' ? (float) number_format($val, 2) : false;
+                    }
+//                if((strpos($val, ',') !==FALSE) && (strpos($val, '.') !==FALSE)){
+//
+//                }
 //                var_dump($val);
-                $newVal = $val !=='' ? number_format((float)$val, 2, '.',',') : false;
                 break;
             default:
                 $newVal = $val !=='' ? ($val) : false;
@@ -135,6 +151,15 @@ class MasterReport
         ];
 
         return $locations[$location][$config];
+    }
+
+    public function parseFloat($number){
+
+        $url = "https://stringtonumber.azurewebsites.net/api/stringToDecimal?code=DdZmlUwZh8hwYvbkP58hp8cjhIvSndf1BW0v7AC5F27QkCD5Y5chYw==&number={$number}";
+
+        $response = file_get_contents($url);
+
+        return $response;
     }
 
 }

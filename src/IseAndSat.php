@@ -47,7 +47,13 @@ class IseAndSat extends MasterReport
     public function build($csvArray, $location, $type='Deposit'){
         $this->setProperties($this->propertiesMap(), $csvArray);
         $this->setLocation($location);
-        return $this->sheetStructure($location);
+        $sheetStructure = $this->sheetStructure($location);
+//        $sheetStructure = FALSE;
+//
+//        if($this->field['DepRedem']===$type){
+//        }
+
+        return $sheetStructure;
     }
 
     public function sheetStructure($location){
@@ -78,7 +84,7 @@ class IseAndSat extends MasterReport
             if($ise > 0){
                 $titleIse = 'ISE';
                 $entregado = $entregado-$ise;
-                $ise = $this->parseProperty($ise, 'float').' $';
+                $ise = $this->formatNumber($this->parseProperty($ise, 'float')).' $';
             }
             else{
                 $ise = '';
@@ -111,6 +117,7 @@ class IseAndSat extends MasterReport
             $premioTitle = "Premio";
         }
 
+
         $taxOnWinning = $this->parseProperty($taxOnWinning, "float");
         $deposit = $this->parseProperty($deposit, "float");
 
@@ -124,6 +131,8 @@ class IseAndSat extends MasterReport
 //            $this->setLocation("default");
         }
 
+//        $num = floatval('3');
+//        var_dump($num);
 
         return [
             "header"=>[
@@ -142,17 +151,17 @@ class IseAndSat extends MasterReport
                 "DETALLES DE LA TRANSACCION"=>[
                     "Transaccion"=>$transaction,
                     "Fecha"=> $fechaHora,
-                    "Deposito"=> $addDeposit ." $",
-                    "Monto Retirado"=>$retirado." $",
-                    $titleDeposit=> $deposit ." $",
-                    "{$premioTitle}" => $winning .' $',
+                    "Deposito"=> $this->formatNumber($addDeposit) ." $",
+                    "Monto Retirado"=>$this->formatNumber($retirado)." $",
+                    $titleDeposit=> $this->formatNumber($deposit) ." $",
+                    "{$premioTitle}" => $this->formatNumber($winning) .' $',
                 ],
                 "ESTADO DE CUENTA"=>[
                     "Cuenta"=>"1",
-                    "{$premioTitle}"=> $winning .' $',
+                    "{$premioTitle}"=> $this->formatNumber($winning) .' $',
                     $titleIse => $ise,
-                    "{$retencion}" => $taxOnWinning .' $',
-                    "{$montoEntregado}" => $entregado.' $'
+                    "{$retencion}" => $this->formatNumber($taxOnWinning) .' $',
+                    "{$montoEntregado}" => $this->formatNumber($entregado).' $'
                 ],
                 "Moneda: MXN"=>[
                     "Pago"=>"Dinero"
