@@ -47,13 +47,8 @@ class IseAndSat extends MasterReport
     public function build($csvArray, $location, $type='Deposit'){
         $this->setProperties($this->propertiesMap(), $csvArray);
         $this->setLocation($location);
-        $sheetStructure = $this->sheetStructure($location);
-//        $sheetStructure = FALSE;
-//
-//        if($this->field['DepRedem']===$type){
-//        }
 
-        return $sheetStructure;
+        return $sheetStructure = $this->sheetStructure($location);
     }
 
     public function sheetStructure($location){
@@ -124,12 +119,6 @@ class IseAndSat extends MasterReport
         $client = trim($prop['FirstName1']).' '.trim($prop['FirstName2'])." ".trim($prop['LastName1']).' '.trim($prop['LastName2']);
 
         $fecha = new DateTime($fecha);
-        $sep3 = new DateTime("2020-09-03");
-        $interval = date_diff($sep3, $fecha);
-
-        if($fecha > $sep3){
-//            $this->setLocation("default");
-        }
 
 
         return [

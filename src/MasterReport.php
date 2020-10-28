@@ -2,8 +2,6 @@
 
 namespace Models;
 
-use \GuzzleHttp;
-use http\Client;
 use \DateTime;
 
 class MasterReport
@@ -43,6 +41,7 @@ class MasterReport
         return $this->location;
     }
 
+    //**
     public function setProperties($properties, $data)
     {
         if (count($properties) === count($data)) {
@@ -76,12 +75,8 @@ class MasterReport
                     }
                     else{
                         $newVal = floatval(str_replace(',', '.', $val));
-//                        $newVal = $val !=='' ? (float) number_format($val, 2) : false;
                     }
-//                if((strpos($val, ',') !==FALSE) && (strpos($val, '.') !==FALSE)){
-//
-//                }
-//                var_dump($val);
+
                 break;
             default:
                 $newVal = $val !=='' ? ($val) : false;
@@ -161,16 +156,6 @@ class MasterReport
                 $return = $locations["default"]["header"];
         }
         return $return;
-    }
-
-    //Please do not use this
-    public function parseFloat($number){
-
-        $url = "https://stringtonumber.azurewebsites.net/api/stringToDecimal?code=DdZmlUwZh8hwYvbkP58hp8cjhIvSndf1BW0v7AC5F27QkCD5Y5chYw==&number={$number}";
-
-        $response = file_get_contents($url);
-
-        return $response;
     }
 
 }

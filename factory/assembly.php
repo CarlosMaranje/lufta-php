@@ -43,6 +43,7 @@ $start = time();
 //    '10783',
 //];
 
+//Here is defined the location -> fileName
 $names = [
     "10645" => "LUF-10645 Casino Skampa",
 //    "10487" => "LUF-10487",
@@ -74,10 +75,12 @@ foreach ($names as $location=>$name) {
      * //    $location = $real[1];
      * //    $pos = (explode('.', $real[2]))[0];
      */
-//Start processing the file
+
     $delimiter = ";";
     $month = 'SEPTEMBER 2020';
     $pos = '';
+
+    //Start processing the file
     $file = fopen($csvDir, "r");
     $fileName = $name . '-' . $month;
 
@@ -166,6 +169,14 @@ foreach ($names as $location=>$name) {
         }
         $i++;
     }
+
+    /**
+     *
+        I: send the file inline to the browser. The PDF viewer is used if available.
+        D: send to the browser and force a file download with the name given by name.
+        F: save to a local file with the name given by name (may include a path).
+        S: return the document as a string.
+     */
     $pdf->Output('F', "printed/{$fileName}.pdf", true);
     fclose($file);
 
