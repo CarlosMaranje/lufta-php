@@ -4,7 +4,7 @@ namespace Models;
 
 use \GuzzleHttp;
 use http\Client;
-
+use \DateTime;
 
 class MasterReport
 {
@@ -92,16 +92,19 @@ class MasterReport
     }
 
     /**
-     * @param string $config The config value requested:[header, tax]
+     * @param $config
+     * @param string $date
      * @return mixed
      */
-    public function config($config)
+    public function config($config, $date="")
     {
+
         $location = $this->getLocation();
         $start = "CASINO MIDAS\n ENTRETENIMIENTOS NATURALES \n S.A. DE C.V. \n RFC: ENA180908T38 \n SUCURSAL";
         $end = "PERMISO SEGOB \n No. 8.S.7.1/DGG/SN/94 \n Oficio Autorizacion \n No. DGJS/282/2018";
 
         $default = "PERMISIONARIA COMERCIALIZADORA DE ENTRETENIMIENTO DE CHIHUAHUA S.A DE C.V AV MANUEL GOMEZ MORIN 1101 PTE. INTL 211 COL. CARRIZALEJO \n NUEVO LEON \n CP 66254 \n RFC CEC050121415 \n OPERADORA TOP ASESORES DE ENTRETENIMIENTO, S.A. DE C.V. \n PERMISO SEGOB: \n DGAJS/SCEVF/P-08/2005\n RFC:TAE1507079C4\n CALLE VALLE SOL #122, INT 302 COL. LA DIANA CP 66566 SAN PEDRO GARZA GARCIA N.L.";
+
         $locations = [
             "10645" => [//Checked Skampa
                 'header'=> $default,
@@ -150,9 +153,17 @@ class MasterReport
             ],
         ];
 
-        return $locations[$location][$config];
+
+        $return = $locations[$location][$config];
+        $sep3 = new DateTime("2020-09-03");
+
+        if(($config==='header') && ($date<$sep3)){
+                $return = $locations["default"]["header"];
+        }
+        return $return;
     }
 
+    //Please do not use this
     public function parseFloat($number){
 
         $url = "https://stringtonumber.azurewebsites.net/api/stringToDecimal?code=DdZmlUwZh8hwYvbkP58hp8cjhIvSndf1BW0v7AC5F27QkCD5Y5chYw==&number={$number}";

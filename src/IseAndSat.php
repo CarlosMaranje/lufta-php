@@ -131,12 +131,10 @@ class IseAndSat extends MasterReport
 //            $this->setLocation("default");
         }
 
-//        $num = floatval('3');
-//        var_dump($num);
 
         return [
             "header"=>[
-                "text"=>$this->config("header")
+                "text"=>$this->config("header", $fecha)
             ],
             "subheader"=>[
                 "text"=>"NOTA DE LA TRANSACCION CON TARJETA"
