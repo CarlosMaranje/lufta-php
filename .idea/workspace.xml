@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db7dac77-867d-4681-bf6a-631ebcdb7fde" name="Default Changelist" comment="Could be the final version" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1ietrqkLjLkWN4ZIpToDtdr29SF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/factory" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\lufta-php\factory" />
+      <recent name="C:\wamp64\www\lufta-php" />
+      <recent name="C:\wamp64\www\lufta-php\auxiliar" />
+      <recent name="C:\wamp64\www\lufta-php\src\pdf" />
+      <recent name="C:\wamp64\www\lufta-php\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\lufta-php\factory" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db7dac77-867d-4681-bf6a-631ebcdb7fde" name="Default Changelist" comment="" />
+      <created>1602280086825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602280086825</updated>
+      <workItem from="1602280087963" duration="33234000" />
+      <workItem from="1603429725584" duration="33274000" />
+      <workItem from="1603742625092" duration="28225000" />
+      <workItem from="1603838287449" duration="2871000" />
+      <workItem from="1603841401915" duration="14549000" />
+    </task>
+    <task id="LOCAL-00001" summary="Parse issue for float numbers solved... maybe">
+      <created>1603851136440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603851136441</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Header corrected before september 3rd">
+      <created>1603853199958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603853199958</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Could be the final version">
+      <created>1603855322675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603855322675</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Parse issue for float numbers solved... maybe" />
+    <MESSAGE value="Header corrected before september 3rd" />
+    <MESSAGE value="Could be the final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Could be the final version" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="344" y="233" key="#Notifications" timestamp="1603851235241">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="344" y="233" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1603851235241" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603516749971">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1603516749971" />
+    <state x="545" y="330" width="445" height="264" key="ComposerInitDialogKey" timestamp="1603847078424">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="545" y="330" width="445" height="264" key="ComposerInitDialogKey/0.0.1536.834@0.0.1536.834" timestamp="1603847078424" />
+    <state x="647" y="315" key="Github.ShareDialog" timestamp="1603851252624">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1603851252624" />
+    <state x="551" y="122" key="Github.UntrackedFilesDialog" timestamp="1603840527789">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="551" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1603840527789" />
+    <state x="595" y="140" key="NewPhpClassDialog" timestamp="1603754876508">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="595" y="140" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1603754876508" />
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603845210077">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603845210077" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1603501989080">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1603501989080" />
+    <state x="78" y="144" key="Vcs.Push.Dialog.v2" timestamp="1603855328432">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="78" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603855328432" />
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603850121567">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1603850121567" />
+    <state x="0" y="0" width="1279" height="820" key="dock-window-1" timestamp="1603502352519">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" width="1279" height="820" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1603502352519" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1603521148519">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603521148519" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602289321561">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602289321561" />
+  </component>
+</project>
